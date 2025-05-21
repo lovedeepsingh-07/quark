@@ -3,14 +3,13 @@ package handlers
 import (
 	"encoding/json"
 	"net/http"
+	"quark-client/lib"
 	"strings"
 	"time"
 
 	"github.com/go-resty/resty/v2"
 	"github.com/google/uuid"
 	"github.com/labstack/echo/v4"
-
-	"quark/client/lib"
 )
 
 // (/auth/register) route handler

@@ -3,12 +3,11 @@ package handlers
 import (
 	"encoding/json"
 	"net/http"
+	"quark-client/lib"
 	"strings"
 
 	"github.com/go-resty/resty/v2"
 	"github.com/labstack/echo/v4"
-
-	"quark/client/lib"
 )
 
 func AuthMiddleware(next echo.HandlerFunc) echo.HandlerFunc {

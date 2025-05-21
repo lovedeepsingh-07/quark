@@ -5,19 +5,18 @@ import (
 	"errors"
 	"net/http"
 	"os"
+	"quark-client/handlers"
+	"quark-client/lib"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-
-	"quark/client/handlers"
-	"quark/client/lib"
 )
 
 //go:embed all:public/lib
 var LibDir embed.FS
 
 func main() {
-	//basic application setup with default config
+	// basic application setup with default config
 	lib.Prepare()
 	default_config_bytes, default_config_load_err := LibDir.ReadFile(
 		lib.DEFAULT_CONFIG_FILE_PATH,
@@ -77,7 +76,7 @@ func main() {
 		Root:       "/",
 	}))
 
-	//middleware
+	// middleware
 	server.Use(handlers.AuthMiddleware)
 	// routes
 	server.GET("/register", handlers.RegisterHandler)

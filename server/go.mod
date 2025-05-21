@@ -1,6 +1,6 @@
-module quark/server
+module quark-server
 
-go 1.22.1
+go 1.24.0
 
 require (
 	github.com/charmbracelet/lipgloss v0.9.1

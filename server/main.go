@@ -8,8 +8,8 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"quark/server/handlers"
-	"quark/server/lib"
+	"quark-server/handlers"
+	"quark-server/lib"
 )
 
 //go:embed all:public/lib

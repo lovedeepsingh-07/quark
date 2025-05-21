@@ -3,12 +3,11 @@ package handlers
 import (
 	"context"
 	"net/http"
+	"quark-client/lib"
+	"quark-client/web"
+	"quark-client/web/routes"
 
 	"github.com/labstack/echo/v4"
-
-	"quark/client/lib"
-	"quark/client/web"
-	"quark/client/web/routes"
 )
 
 // (/register) route handler

@@ -1,16 +1,16 @@
-module quark/client
+module quark-client
 
-go 1.22.2
+go 1.24.0
 
 require (
-	github.com/a-h/templ v0.2.663
+	github.com/a-h/templ v0.3.865
 	github.com/charmbracelet/lipgloss v0.10.0
 	github.com/charmbracelet/log v0.4.0
 	github.com/go-resty/resty/v2 v2.12.0
 	github.com/google/uuid v1.6.0
 	github.com/labstack/echo/v4 v4.11.4
 	github.com/pelletier/go-toml v1.9.5
-	golang.org/x/crypto v0.21.0
+	golang.org/x/crypto v0.37.0
 )
 
 require (
@@ -28,8 +28,8 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect
 	golang.org/x/exp v0.0.0-20231006140011-7918f672742d // indirect
-	golang.org/x/net v0.22.0 // indirect
-	golang.org/x/sys v0.18.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/net v0.39.0 // indirect
+	golang.org/x/sys v0.32.0 // indirect
+	golang.org/x/text v0.24.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
 )

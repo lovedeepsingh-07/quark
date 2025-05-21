@@ -2,11 +2,10 @@ package web
 
 import (
 	"net/http"
+	"quark-client/lib"
 
 	"github.com/a-h/templ"
 	"github.com/labstack/echo/v4"
-
-	"quark/client/lib"
 )
 
 // render the templ HTMX template
